@@ -1,4 +1,4 @@
-package com.krakedev;
+package com.krakedev.Cliente;
 
 public class Cliente {
     private String nombre;

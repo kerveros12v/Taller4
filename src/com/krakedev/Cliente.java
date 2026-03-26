@@ -59,4 +59,8 @@ public class Cliente {
         }
     }
 
+    public void mostrarSaldo() {
+        System.out.println("Saldo disponible: $" + saldo);
+    }
+
 }

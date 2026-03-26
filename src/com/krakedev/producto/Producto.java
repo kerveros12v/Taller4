@@ -16,9 +16,9 @@ public class Producto {
 	
 	public void mostrarInfo() {
 		System.out.println("Producto: "+nombre
-				+"Categoria: "+categoria
-				+"Precio: "+precio
-				+"Stok: "+stock+" unidades");
+				+"\nCategoria: "+categoria
+				+"\nPrecio: "+precio
+				+"\nStok: "+stock+" unidades");
 	}
 	
 	public void aplicarDescuento(double porcentaje) {

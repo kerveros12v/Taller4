@@ -1,3 +1,5 @@
+package com.krakedev.tienda;
+
 public class tienda {
 	private String nombreTienda;
 	private String[] productos;

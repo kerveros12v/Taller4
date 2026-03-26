@@ -1,4 +1,4 @@
-package com.krakedev;
+package com.krakedev.Carrito;
 
 public class Carrito {
     private String nombreCliente;

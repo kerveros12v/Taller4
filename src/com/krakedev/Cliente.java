@@ -44,4 +44,9 @@ public class Cliente {
     public void setTotalCompras(int totalCompras) {
         this.totalCompras = totalCompras;
     }
+    
+    public void mostrarPerfil() {
+        System.out.println("Cliente: " + nombre + " Correo: " + correo + " Saldo: $" + saldo + " Compras realizadas: " + totalCompras);
+    }
+
 }

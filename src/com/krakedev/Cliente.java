@@ -44,9 +44,19 @@ public class Cliente {
     public void setTotalCompras(int totalCompras) {
         this.totalCompras = totalCompras;
     }
-    
+
     public void mostrarPerfil() {
         System.out.println("Cliente: " + nombre + " Correo: " + correo + " Saldo: $" + saldo + " Compras realizadas: " + totalCompras);
+    }
+
+    public void realizarCompra(double monto) {
+        if (saldo >= monto) {
+            saldo -= monto;
+            totalCompras++;
+            System.out.println("Compra exitosa por $" + monto + " Saldo restante: $" + saldo);
+        } else {
+            System.out.println("Saldo insuficiente. Saldo actual: $" + saldo);
+        }
     }
 
 }

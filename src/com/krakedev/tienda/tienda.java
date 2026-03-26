@@ -31,4 +31,14 @@ public class tienda {
 		this.productos = new String[10];
 		this.totalProductos = 0;
 	}
+    public void registrarProductos(String nombre) {
+		if (totalProductos < productos.length) {
+			productos[totalProductos] = nombre;
+			totalProductos++;
+			System.out.println("Producto registrado: " + nombre);
+		} else {
+			System.out.println("Limite de productos a registrar alcanzado (Limite: 10)");
+		}
+	}
+
 }

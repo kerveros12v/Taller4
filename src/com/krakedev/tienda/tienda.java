@@ -40,5 +40,20 @@ public class tienda {
 			System.out.println("Limite de productos a registrar alcanzado (Limite: 10)");
 		}
 	}
+    public void buscarProducto(String nombre) {
+        boolean encontrado = false;
+
+        for (int i = 0; i < totalProductos; i++) {
+            if (productos[i].equalsIgnoreCase(nombre)) {
+                System.out.println("Encontrado: " + nombre);
+                encontrado = true;
+                break;
+            }
+        }
+
+        if (!encontrado) {
+            System.out.println("No encontrado: " + nombre);
+        }
+	}
 
 }

@@ -55,5 +55,13 @@ public class tienda {
             System.out.println("No encontrado: " + nombre);
         }
 	}
+    public void generarReporte() {
+		System.out.println("Tienda: " + nombreTienda);
+        System.out.println("Total de productos: " + totalProductos);
+        System.out.println("Catálogo:");
 
+        for (int i = 0; i < totalProductos; i++) {
+            System.out.println((i + 1) + ". " + productos[i]);
+	        }
+	}
 }

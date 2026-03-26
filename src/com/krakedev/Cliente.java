@@ -5,11 +5,43 @@ public class Cliente {
     private String correo;
     private double saldo;
     private int totalCompras;
-    
+
     public Cliente(String nombre, String correo, double saldo) {
         this.nombre = nombre;
         this.correo = correo;
         this.saldo = saldo;
         this.totalCompras = 0;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public int getTotalCompras() {
+        return totalCompras;
+    }
+
+    public void setTotalCompras(int totalCompras) {
+        this.totalCompras = totalCompras;
     }
 }
